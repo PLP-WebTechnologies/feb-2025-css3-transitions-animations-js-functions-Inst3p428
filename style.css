@@ -1,0 +1,47 @@
+body {
+  transition: background-color 0.5s, color 0.5s;
+  background-color: #f9f9f9;
+  color: #222;
+  font-family: sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark {
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Animation class */
+button.animate {
+  animation: bounce 0.4s ease;
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
